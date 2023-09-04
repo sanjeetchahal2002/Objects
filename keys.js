@@ -7,9 +7,7 @@ function keys(obj) {
   
     const objectKeys = [];
     for (const key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
         objectKeys.push(key);
-      }
     }
   
     return objectKeys;
