@@ -4,7 +4,9 @@ function defaults(obj, defaultProps) {
     }
   
     for (const key in defaultProps) {
-      obj[key] = defaultProps[key];
+      if(!obj[key]){
+        obj[key] = defaultProps[key]
+      }
     }
   
     return obj;
