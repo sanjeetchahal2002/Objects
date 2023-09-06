@@ -8,8 +8,8 @@ function defaults(obj, defaultProps) {
         obj[key] = defaultProps[key]
       }
     }
-  
     return obj;
   }
-  
+ 
+
   module.exports = defaults;
